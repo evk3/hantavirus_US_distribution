@@ -3,7 +3,7 @@
 The site contains the code used in this manuscript: "Hantavirus Prevalence and Viral Strain Distribution in the US, 2008-2020"
 
 ## PDF Parser
-This script parsed the results of CDC pdf reports sent to submitters (state public health labs and requesting doctors) to compile hantavirus results from 2008-2020.
+The pdf_parsing_script.ipynb is an iPython Notebook that parses the CDC pdf reports sent to submitters (state public health labs and requesting doctors) to compile hantavirus results from 2008-2020.
 
 ## Download all available hantavirus genomes.
 This script is used to download all available hantavirus genomes.  The script can be easily modified to download other viral genomes, too!
