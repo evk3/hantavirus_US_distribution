@@ -17,7 +17,7 @@ Sharing the code that was used to build unknown and diverse hantavirus genomes.
 ### Step 1: Identify the closest reference sequence.
 Reads were quality trimmed, mapped to a human reference and unmapped reads were de novo assembled with SPaDes.  Contigs were blasted and the resulting hantavirus hits were used as reference sequences for read mapping.
 
--Submit script to SGE scheduler node: "bash array_script.sh"
+-Submit script to SGE scheduler node: "bash array_script_denovo_V1.sh"
 
 -array script reads the file names in file_names.txt and submits each job, but skips every other line in file_names.txt to account for the R1/R1.fastq.gz files.
 
