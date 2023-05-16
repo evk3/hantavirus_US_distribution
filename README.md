@@ -21,7 +21,8 @@ Reads were quality trimmed, mapped to a human reference and unmapped reads were 
 
 -array script reads the file names in file_names.txt and submits each job, but skips every other line in file_names.txt to account for the R1/R1.fastq.gz files.
 
--file_name.txt format:  ./raw_data/sample1_S1_L001_R1_001.fastq.gz
+-file_name.txt format:  
+                        ./raw_data/sample1_S1_L001_R1_001.fastq.gz
 
                         ./raw_data/sample1_S1_L001_R2_001.fastq.gz
                         
