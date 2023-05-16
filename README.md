@@ -34,7 +34,7 @@ Reads were quality trimmed, mapped to a human reference and unmapped reads were 
                         ....etc...
                         
                         
- -deNovo_and_identify.sh runs for each job with input files: sample1_S1_L001_R1_001.fastq.gz and sample1_S1_L001_R2_001.fastq.gz.
+ -deNovo_and_identify_V1.sh runs for each job with input files: sample1_S1_L001_R1_001.fastq.gz and sample1_S1_L001_R2_001.fastq.gz.
         -data are trimmed and de novo assembled.
         
  -blast_python.py performs the blasting of contigs and returns the results in an *.xml and *.txt format.
