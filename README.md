@@ -22,10 +22,15 @@ Reads were quality trimmed, mapped to a human reference and unmapped reads were 
 -array script reads the file names in file_names.txt and submits each job, but skips every other line in file_names.txt to account for the R1/R1.fastq.gz files.
 
 -file_name.txt format:  ./raw_data/sample1_S1_L001_R1_001.fastq.gz
+
                         ./raw_data/sample1_S1_L001_R2_001.fastq.gz
+                        
                         ./raw_data/sample2_S2_L001_R1_001.fastq.gz
+                        
                         ./raw_data/sample2_S2_L001_R2_001.fastq.gz
+                        
                         ....etc...
+                        
                         
  -deNovo_and_identify.sh runs for each job with input files: sample1_S1_L001_R1_001.fastq.gz and sample1_S1_L001_R2_001.fastq.gz.
         -data are trimmed and de novo assembled.
