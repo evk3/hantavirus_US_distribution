@@ -40,4 +40,12 @@ Reads were quality trimmed, mapped to a human reference and unmapped reads were 
  -blast_python.py performs the blasting of contigs and returns the results in an *.xml and *.txt format.
 
 ### Step 2: Build genomes using the closest matching reference sequence.
-Initial scaffold genomes were built using both contigs and reads, and genomes were iteratively assembled using scaffold genomes and reads.  Final genomes were parsed by eye to identify any frameshifts or indels.  These troublemaker genomes were re-assembled using the Geneious mapper and reads (but not using contigs, since these introduced most of the errors).
+Initial scaffold genomes were built using both contigs and reads, and genomes were iteratively assembled using scaffold genomes and reads.  
+
+-Script submission followed an array-based process:
+
+-submit wrapper script to SGE scheduler node: "bash array_map_to_ref_V1.sh"
+
+-array script reads the file names in file_names_hanta.txt and submits each job ("read_contig_iterative_map_V1.sh"), but skips every other line in file_names_hanta.txt to account for the R1/R1.fastq.gz files.
+
+Final genomes were parsed by eye to identify any frameshifts or indels.  Genomes with indels or framshifts were re-assembled using the Geneious mapper and reads (but not using contigs, since these introduced most of the errors).
