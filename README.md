@@ -48,4 +48,6 @@ Initial scaffold genomes were built using both contigs and reads, and genomes we
 
 -array script reads the file names in file_names_hanta.txt and submits each job ("read_contig_iterative_map_V1.sh"), but skips every other line in file_names_hanta.txt to account for the R1/R1.fastq.gz files.
 
+-Since each specimen needed it's own reference (SNV, Monongahela, New York or Seoul virus), the script reads the appropriate references from "references_read-contig_mapping_hanta.txt." Please note that the input fastq.gz format in "file_names_hanta.txt" needs to match the arrangement in "references_read-contig_mapping_hanta.txt."
+
 Final genomes were parsed by eye to identify any frameshifts or indels.  Genomes with indels or framshifts were re-assembled using the Geneious mapper and reads (but not using contigs, since these introduced most of the errors).
